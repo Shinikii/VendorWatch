@@ -63,15 +63,15 @@
 
     <script type="text/babel">
         import React, { useState, useEffect } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Alert, AlertDescription } from '@/components/ui/alert';
-import { RefreshCw, Clock, Percent, Zap, AlertCircle } from 'lucide-react';
+        import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+        import { Badge } from '@/components/ui/badge';
+        import { Alert, AlertDescription } from '@/components/ui/alert';
+        import { RefreshCw, Clock, Percent, Zap, AlertCircle } from 'lucide-react';
 
-const REFRESH_INTERVAL = 300000; // 5 minutes in milliseconds
-const API_ENDPOINT = 'https://api.warframestat.us/pc/syndicate';
+        const REFRESH_INTERVAL = 300000; // 5 minutes in milliseconds
+        const API_ENDPOINT = 'https://api.warframestat.us/pc/syndicate';
 
-const PerrinTracker = () => {
+        const PerrinTracker = () => {
   const [inventory, setInventory] = useState([]);
   const [lastUpdated, setLastUpdated] = useState(null);
   const [error, setError] = useState(null);
@@ -283,7 +283,7 @@ const PerrinTracker = () => {
   );
 };
 
-export default PerrinTracker;
+        export default PerrinTracker;
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<PerrinTracker />);
     </script>
