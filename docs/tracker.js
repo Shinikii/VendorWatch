@@ -54,6 +54,7 @@ const PerrinTracker = () => {
     } finally {
       setIsLoading(false);
     }
+    
   };
 
   // Helper function to determine item type
@@ -220,3 +221,4 @@ const PerrinTracker = () => {
 };
 
 export default PerrinTracker;
+
